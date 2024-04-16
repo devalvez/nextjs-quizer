@@ -84,16 +84,23 @@ const Question = () => {
   }
 
   const handleSaveAnswers = (index: number, questionUID: string) => {
-    const addAnswers = [...questions]
-    addAnswers[index] = {...addAnswers[index], answers: answers, corrects: corrects }
-    setQuestions(addAnswers)
 
-    const currentSection = document.querySelector(`#section_answer_${questionUID}`)
-    currentSection.classList.add("hidden")
-    
-    setInputAnswer("")
-    setAnswers([])
-    setCorrects([])
+    if(corrects.length <= 0) {
+      
+      alert("Selecione uma opção correta!")
+      
+    } else { 
+      const addAnswers = [...questions]
+      addAnswers[index] = {...addAnswers[index], answers: answers, corrects: corrects }
+      setQuestions(addAnswers)
+      
+      const currentSection = document.querySelector(`#section_answer_${questionUID}`)
+      currentSection.classList.add("hidden")
+      
+      setInputAnswer("")
+      setAnswers([])
+      setCorrects([])
+    }
   }
   
   const handleDefineCorrectAnswer = (value, indexQuestion) => {
