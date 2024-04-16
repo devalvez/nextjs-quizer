@@ -79,14 +79,19 @@ const Question = () => {
 
   const handleCreateAswers = (index: number) => {
     const uid = uuidv4()
-    setAnswers([...answers, inputAnswer ])
+
+    if(answers.includes(inputAnswer)) {
+      alert("Essa alternativa já existe na lista!")
+    } else {
+      setAnswers([...answers, inputAnswer ])
+    }
+    
     setInputAnswer("")
   }
 
   const handleSaveAnswers = (index: number, questionUID: string) => {
-
     if(corrects.length <= 0) {
-      
+
       alert("Selecione uma opção correta!")
       
     } else { 
