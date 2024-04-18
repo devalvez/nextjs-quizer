@@ -1,0 +1,50 @@
+[
+	{
+		"uid": "38d92649-b36d-407f-9253-d4c210acdb59",
+		"question": "Em que ano foi lançado o primeiro filme da franquia Star Wars?",
+		"answerType": "radio",
+		"answers": [
+			"1989",
+			"1977",
+			"1985"
+		],
+		"point": "5",
+		"correctAnswer": "1"
+	},
+	{
+		"uid": "57b15772-b086-4f33-a3f5-ae547d95aa92",
+		"question": "Qual o título do primeiro file da franquia Star Wars?",
+		"answerType": "radio",
+		"answers": [
+			"Episódio 1 - A Ameaça Fantasma",
+			"Episódio 6 - O Retorno de Jedi",
+			"Episódio 4 - Uma Nova Esperança"
+		],
+		"point": "5",
+		"correctAnswer": "2"
+	},
+	{
+		"uid": "0ee203e9-ecee-47d5-8d86-3ff67f074773",
+		"question": "Qual o nome dos gueiros da paz nos filmes?",
+		"answerType": "radio",
+		"answers": [
+			"Jedi",
+			"Stormtrooper",
+			"Paladino"
+		],
+		"point": "5",
+		"correctAnswer": "0"
+	},
+	{
+		"uid": "9f81aebd-be75-4923-85f6-84ad214fbbac",
+		"question": "Qual o nome da arma utilizada por um Jedi?",
+		"answerType": "radio",
+		"answers": [
+			"Excalibur",
+			"Speeder",
+			"Sabre de luz"
+		],
+		"point": "5",
+		"correctAnswer": "2"
+	}
+]
